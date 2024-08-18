@@ -192,7 +192,7 @@ export default function Home() {
                 >
                     <Image
                         className="left-10 top-80 hidden 2xl:absolute 2xl:block"
-                        src={"/play.webp"}
+                        src={"/PLAYIdolexpobgdc2024.png"}
                         width={518 / 2}
                         height={705 / 2}
                         alt=""
@@ -337,7 +337,7 @@ export default function Home() {
                 >
                     <Image
                         className="right-10 top-1/3 hidden 2xl:absolute 2xl:block"
-                        src={"/observe.webp"}
+                        src={"/OBSIdolexpobgdc2024.png"}
                         width={518 / 2}
                         height={705 / 2}
                         alt=""
@@ -458,7 +458,7 @@ export default function Home() {
                 >
                     <Image
                         className="left-10 top-1/3 hidden 2xl:absolute 2xl:block"
-                        src={"/develop.webp"}
+                        src={"/DEVIdolexpobgdc2024.png"}
                         width={518 / 2}
                         height={705 / 2}
                         alt=""

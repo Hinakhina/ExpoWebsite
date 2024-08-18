@@ -120,16 +120,6 @@ export default function Daftar() {
                                             </a>
                                         </Typography>
                                     </Alert>
-                                    <Alert
-                                        className="p-2"
-                                        color="red"
-                                        icon={<WarningRounded className="h-5 w-5" />}
-                                    >
-                                        <Typography variant="small" className="text-xs">
-                                            Nomor rekening on the brochure is wrong. Please use the
-                                            details below.
-                                        </Typography>
-                                    </Alert>
                                 </div>
                             </div>
                             <div className="flex w-full flex-col items-center gap-5"></div>
@@ -180,13 +170,6 @@ export default function Daftar() {
                         </div>
                     </Card>
                     <Card className="relative flex min-h-[570px] w-[90vw] max-w-sm flex-col items-center gap-5 bg-white p-5 opacity-60 shadow-2xl">
-                        <Typography
-                            variant="lead"
-                            color="black"
-                            className="absolute top-1/2 w-full text-center font-serif text-4xl opacity-100"
-                        >
-                            CLOSED
-                        </Typography>
                         <div className="flex h-full w-full flex-col items-center justify-between gap-5">
                             <div className="flex flex-col items-center gap-2">
                                 <Typography
