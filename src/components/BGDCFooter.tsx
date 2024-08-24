@@ -46,7 +46,7 @@ export default function BgdcFooter() {
             <hr className="my-8 border-blue-gray-50" />
             <div className="flex flex-col items-center justify-start gap-5">
                 <Typography color="white" className="text-center font-normal">
-                    &copy; 2023 Binus Game Development Club
+                    &copy; 2024 Binus Game Development Club
                 </Typography>
             </div>
         </footer>

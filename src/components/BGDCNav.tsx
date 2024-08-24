@@ -23,7 +23,7 @@ export default function BgdcNav() {
                 color="blue-gray"
                 className="flex flex-row items-center p-1 text-xl font-normal"
             >
-                <Link href={"/#kelas"}>Class</Link>
+                <Link href={"/#activities"}>Activities</Link>
             </Typography>
             <Typography
                 as="li"
@@ -31,7 +31,7 @@ export default function BgdcNav() {
                 color="blue-gray"
                 className="flex flex-row items-center p-1 text-xl font-normal"
             >
-                <Link href={"/#talent-group"}>Talent Group</Link>
+                <Link href={"/#events"}>Events</Link>
             </Typography>
             <Typography
                 as="li"
@@ -39,7 +39,7 @@ export default function BgdcNav() {
                 color="blue-gray"
                 className="flex flex-row items-center p-1 text-xl font-normal"
             >
-                <Link href={"/#find-us"}>Find Us</Link>
+                <Link href={"/find-us"}>Find Us</Link>
             </Typography>
             <Typography
                 as="li"

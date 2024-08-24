@@ -20,25 +20,25 @@ export default function Faq() {
     return (
         <>
             <BgdcNav />
-            <main className="flex min-h-screen flex-col items-center bg-magenta 2xl:min-h-[1200px]">
-                <div id="content" className="relative mt-16 h-full w-full max-w-[1920px] px-5">
+            <main id="content" className="flex min-h-screen flex-col items-center 2xl:min-h-[1200px]">
+                <div className="relative mt-16 h-full w-full max-w-[1920px] px-5">
                     <Image
-                        className="left-20 top-0 hidden translate-y-[100px] 2xl:absolute 2xl:block"
-                        src={"/play.webp"}
+                        className="left-5 top-0 hidden translate-y-[100px] 2xl:absolute 2xl:block"
+                        src={"/IdolPlay.webp"}
                         width={518 / 2}
                         height={705 / 2}
                         alt=""
                     />
                     <Image
-                        className="right-20 top-0 hidden translate-y-[300px] 2xl:absolute 2xl:block"
-                        src={"/observe.webp"}
+                        className="right-5 top-0 hidden translate-y-[300px] 2xl:absolute 2xl:block"
+                        src={"/IdolObs.webp"}
                         width={518 / 2}
                         height={705 / 2}
                         alt=""
                     />
                     <Image
-                        className="left-20 top-0 hidden translate-y-[600px]  2xl:absolute 2xl:block"
-                        src={"/develop.webp"}
+                        className="left-5 top-0 hidden translate-y-[600px]  2xl:absolute 2xl:block"
+                        src={"/IdolDev.webp"}
                         width={518 / 2}
                         height={705 / 2}
                         alt=""
@@ -46,7 +46,7 @@ export default function Faq() {
                     <Typography
                         variant="h1"
                         color="white"
-                        className="mx-auto w-full text-center font-serif font-medium"
+                        className="mx-auto w-full text-center font-serif font-medium outline-text-3"
                     >
                         Frequently Asked Questions
                     </Typography>
@@ -68,80 +68,84 @@ export default function Faq() {
                                 </div>
                             </AccordionHeader>
                             <AccordionBody>
-                                <Card className="bg-purple-90 p-5">
+                                <Card className="bg-faqbg p-5">
                                     <Typography variant="h5" color="white" className="font-medium">
                                         Apa itu BGDC?
                                     </Typography>
                                     <Typography
                                         variant="paragraph"
                                         color="white"
-                                    >{`BINUS Game Development Club merupakan organisasi kemahasiswaan BINUS yang bergerak dalam memberikan pembelajaran dan aktivitas kepada mahasiswa BINUS untuk mengembangkan game. BGDC memiliki komunitas aktif di server Discord yang menjadi pusat interaksi para anggota. Berbagai channel tersedia di server Discord BGDC untuk membahas berbagai topik menarik, mulai dari dunia game, anime, 2D/3D art dan design, musik, event-event BGDC, serta informasi penting seputar BINUS dan perkuliahan.`}</Typography>
+                                    >{`BINUS Game Development Club merupakan organisasi kemahasiswaan BINUS yang bergerak dalam memberikan pembelajaran dan aktivitas kepada mahasiswa BINUS untuk mengembangkan game.`}</Typography>
                                     <br />
                                     <Typography variant="h5" color="white" className="font-medium">
                                         Apakah BGDC itu gaming club?
                                     </Typography>
                                     <Typography variant="paragraph" color="white">
                                         {" "}
-                                        <strong className="font-semibold">BUKAN.</strong> BGDC
-                                        merupakan organisasi kemahasiswaan yang fokus pada
-                                        pembelajaran dan pengembangan game, bukan kegiatan gaming
-                                        itu sendiri.{" "}
-                                        <strong className="font-semibold">Meskipun begitu,</strong>{" "}
-                                        kami mempunyai subkomunitas gaming yang aktif serta sering
-                                        mengadakan gathering <i>gametime</i> untuk member.
+                                        <strong className="font-semibold">BUKAN.</strong> BGDC merupakan organisasi kemahasiswaan yang bergerak dan berfokus  pada bidang pengembangan game, namun kami juga memiliki sub komunitas yang aktif dalam bermain game.
+                                    </Typography>
+                                    <br />
+                                    <Typography variant="h5" color="white" className="font-medium">
+                                        Kegiatan BGDC apa saja?
+                                    </Typography>
+                                    <Typography variant="paragraph" color="white">
+                                        BGDC menyediakan banyak kegiatan untuk member. Beberapa contoh dari kegiatannya adalah Gathering (Coffee Talk, Mabar, Karaoke, dll), Talent Group, dll. Gathering adalah kegiatan yang dilakukan secara bulanan dan diadakan untuk mempererat hubungan antar sesama member BGDC. Sedangkan Talent Group adalah kegiatan dimana member BGDC akan dibentuk menjadi beberapa tim dan membuat game dalam waktu terbatas, lalu game tersebut akan dipajang di bgdc.itch.io.
+                                    </Typography>
+                                    <br />
+                                    <Typography variant="h5" color="white" className="font-medium">
+                                        Acara BGDC apa saja?
+                                    </Typography>
+                                    <Typography variant="paragraph" color="white">
+                                        Untuk acara, BGDC memiliki acara yang diselenggarakan secara tahunan. Contohnya Indienesia Game Festival (IGF), Webifest, Welcoming Party, dll. IGF adalah acara tahunan BGDC dimana developer indie  beserta kelompok TG melakukan pameran game yang telah dibuat. Webifest adalah acara webinar di zoom meeting selama binus festival berjalan, dimana kalian bisa mendapatkan ilmu tentang game development dari ahlinya. Dan Welcoming Party adalah acara untuk menyambut member baru BGDC.
                                     </Typography>
                                     <br />
                                     <Typography variant="h5" color="white" className="font-medium">
                                         BGDC membuka cabang di kampus mana saja?
                                     </Typography>
                                     <Typography variant="paragraph" color="white">
-                                        BGDC terbuka di setiap cabang, namun cabang terbesar kami
-                                        ada di Kemanggisan, Alam Sutera, dan Bandung.
+                                        Secara official, UKM kita memiliki cabang di Kemanggisan dan Alam sutera, namun kita juga menerima member dari berbagai region binus.
                                     </Typography>
                                     <br />
                                     <Typography variant="h5" color="white" className="font-medium">
                                         BGDC aktif di platform mana saja?
                                     </Typography>
                                     <Typography variant="paragraph" color="white">
-                                        BGDC paling aktif di server Discord BGDC, kemudian di
-                                        platform lain seperti Instagram, Twitter, YouTube, dan
-                                        itch.io (wadah publikasi game BGDC).
+                                        BGDC paling aktif di server Discord yang menjadi pusat interaksi para anggota. Berbagai channel tersedia di server Discord BGDC untuk membahas berbagai topik menarik. Kemudian di platform lain seperti Instagram, Twitter, YouTube, dan itch.io (wadah publikasi game BGDC).
                                     </Typography>
                                     <br />
                                     <Typography variant="h5" color="white" className="font-medium">
-                                        Jika saya sudah berpengalaman dalam game development, apa
-                                        yang BGDC bisa tawarkan untuk saya?
+                                        Apakah terdapat game BGDC yang sudah memasuki steam, epic games, dll?
                                     </Typography>
                                     <Typography variant="paragraph" color="white">
-                                        Jika kalian sudah memiliki pengalaman dalam game
-                                        development, BGDC memiliki penawaran yang menarik untuk
-                                        kalian. Bergabunglah dengan Talent Group dan Jam Buddies
-                                        untuk bertemu dengan rekan-rekan sesama game developer. Di
-                                        sini, kalian dapat menerapkan dan menguji ilmu serta
-                                        pengalaman kalian dalam praktik game development yang nyata.
+                                        Ada 1 game BGDC yang sudah masuk di steam berjudul ‘Project Hypatios’.
                                     </Typography>
                                     <br />
                                     <Typography variant="h5" color="white" className="font-medium">
-                                        Apakah BGDC terbuka untuk member baru yang tidak memiliki
-                                        pengalaman di bidang game development?
+                                        Apakah terdapat member atau alumni BGDC yang sudah bekerja di studio/perusahaan game development yang besar/ternama?
                                     </Typography>
                                     <Typography variant="paragraph" color="white">
-                                        Tentu saja, BGDC sangat terbuka untuk member baru, bahkan
-                                        yang belum memiliki pengalaman dalam game development. Kami
-                                        menyambut binusian yang ingin mempelajari ilmu game
-                                        development melalui kelas-kelas yang BGDC sediakan. Ini
-                                        adalah kesempatan bagus bagi kalian untuk belajar dan
-                                        mengembangkan diri dalam dunia Game Development bersama
-                                        BGDC.
+                                        Ada alumni BGDC yang sekarang bekerja di Agate membuat game berjudul Mythic Protocol Riftstorm.
                                     </Typography>
                                     <br />
                                     <Typography variant="h5" color="white" className="font-medium">
-                                        Apakah bisa mendapatkan SAT dan comserv jika bergabung
-                                        dengan BGDC?
+                                        Apakah BGDC pernah mengundang atau mengunjungi studio atau company besar pada aktivitas/event? 
                                     </Typography>
                                     <Typography variant="paragraph" color="white">
-                                        Jika kalian mengikuti kegiatan BGDC, maka kalian
-                                        berkesempatan untuk mendapatkan SAT ataupun comserv.
+                                        BGDC pernah mengundang Agate pada event Indienesia Game Festival.
+                                    </Typography>
+                                    <br />
+                                    <Typography variant="h5" color="white" className="font-medium">
+                                        Apakah BGDC pernah bekerja sama dengan studio atau company game development ternama? 
+                                    </Typography>
+                                    <Typography variant="paragraph" color="white">
+                                        Pernah, untuk media partner, beberapa contohnya adalah Renala Games, Mojiken Studio, Sanditio Jitok, Khayalan Arts, Glory Jam, dll. Dan special guest yang pernah diundang adalah Head of Agate Academy.
+                                    </Typography>
+                                    <br />
+                                    <Typography variant="h5" color="white" className="font-medium">
+                                        Apakah BGDC memiliki sponsor? 
+                                    </Typography>
+                                    <Typography variant="paragraph" color="white">
+                                        Untuk sekarang, kita masih belum memiliki sponsor.
                                     </Typography>
                                 </Card>
                             </AccordionBody>
@@ -163,13 +167,12 @@ export default function Faq() {
                                 </div>
                             </AccordionHeader>
                             <AccordionBody>
-                                <Card className="bg-purple-90 p-5">
+                                <Card className="bg-faqbg p-5">
                                     <Typography variant="h5" color="white" className="font-medium">
-                                        Berapa biaya pendaftaran member BGDC?
+                                        Berapa besar biaya pendaftaran member BGDC?
                                     </Typography>
                                     <Typography variant="paragraph" color="white">
-                                        Biaya pendaftaran member BGDC adalah sebesar 100 ribu
-                                        rupiah.
+                                        Biaya pendaftaran member BGDC sebesar Rp100.000,-.
                                     </Typography>
                                     <br />
                                     <Typography variant="h5" color="white" className="font-medium">
@@ -181,38 +184,65 @@ export default function Faq() {
                                     </Typography>
                                     <br />
                                     <Typography variant="h5" color="white" className="font-medium">
-                                        Apakah alumni BINUS diperbolehkan untuk mendaftar?
+                                        Apa syarat bergabung BGDC ?
                                     </Typography>
                                     <Typography variant="paragraph" color="white">
-                                        Tidak. Alumni secara resmi sudah lulus dari Binus dan
-                                        pendaftaran tidak terbuka untuk mahasiswa yang telah lulus.
+                                        Pendaftaran hanya berlaku untuk mahasiswa baru dan satu angkatan di atasnya, lalu pendaftar sudah membayar biaya pendaftaran.
                                     </Typography>
                                     <br />
                                     <Typography variant="h5" color="white" className="font-medium">
-                                        Apakah alumni BINUS diperbolehkan untuk mengikuti kegiatan
-                                        BGDC?
+                                        Apakah alumni Binus diperbolehkan untuk mendaftar dan mengikuti aktivitas maupun event di BGDC?
                                     </Typography>
                                     <Typography variant="paragraph" color="white">
-                                        Apabila alumni merupakan anggota BGDC, maka alumni
-                                        diperbolehkan untuk tetap aktif dalam acara dan discord
-                                        server BGDC.
+                                        Alumni secara resmi sudah lulus dari Binus dan pendaftaran tidak terbuka untuk mahasiswa yang telah lulus. Tetapi, jika alumni merupakan anggota BGDC, maka alumni diperbolehkan untuk tetap aktif dalam acara dan discord server BGDC.
                                     </Typography>
                                     <br />
                                     <Typography variant="h5" color="white" className="font-medium">
-                                        Apakah pendaftaran BGDC hanya terbuka untuk jurusan
-                                        tertentu?
+                                        Apakah anak diluar jurusan GAT, DKV, Compsci, dll diperbolehkan untuk mendaftar ke BGDC?
                                     </Typography>
                                     <Typography variant="paragraph" color="white">
-                                        Tidak. Semua jurusan dapat mendaftar menjadi member BGDC.
+                                        Tentu saja! Siapapun dari jurusan manapun diperbolehkan untuk mendaftar ke BGDC. Kami sangat terbuka untuk semua mahasiswa yang memiliki minat dalam pengembangan game.
                                     </Typography>
                                     <br />
                                     <Typography variant="h5" color="white" className="font-medium">
                                         Jika sudah bergabung dengan UKM lain atau himpunan, apakah
-                                        tetap diperbolehkan untuk mendaftar menjadi member BGDC?
+                                        boleh mendaftar di BGDC?
                                     </Typography>
                                     <Typography variant="paragraph" color="white">
                                         Iya, pendaftaran tetap dapat dilakukan meskipun telah
                                         bergabung dengan UKM lain atau himpunan.
+                                    </Typography>
+                                    <br />
+                                    <Typography variant="h5" color="white" className="font-medium">
+                                        Jika saya sudah berpengalaman dalam game development, apa yang BGDC bisa tawarkan untuk saya?
+                                    </Typography>
+                                    <Typography variant="paragraph" color="white">
+                                        Jika kalian sudah memiliki pengalaman dalam game
+                                        development, BGDC memiliki penawaran yang menarik untuk
+                                        kalian. Bergabunglah dengan Talent Group dan Jam Buddies
+                                        untuk bertemu dengan rekan-rekan sesama game developer. Di
+                                        sini, kalian dapat menerapkan dan menguji ilmu serta
+                                        pengalaman kalian dalam praktik game development yang nyata.
+                                    </Typography>
+                                    <br />
+                                    <Typography variant="h5" color="white" className="font-medium">
+                                        Pendaftaran akan dibuka sampai kapan?
+                                    </Typography>
+                                    <Typography variant="paragraph" color="white">
+                                        Pendaftaran akan dibuka sampai [TBA].
+                                    </Typography>
+                                    <br />
+                                    <Typography variant="h5" color="white" className="font-medium">
+                                        Benefit apa yang didapatkan jika menjadi member BGDC?
+                                    </Typography>
+                                    <Typography variant="paragraph" color="white">
+                                        Jika kalian mengikuti kegiatan-kegiatan BGDC, maka kalian memiliki kesempatan untuk:
+                                        <ul>
+                                            <li>- Memperoleh SAT melalui partisipasi dalam Talent Group, yaitu program BGDC yang mengelompokkan anggota yang berkomitmen dalam pengembangan game dengan tujuan untuk menciptakan sebuah game dalam beberapa bulan.</li>
+                                            <li>- Mendapatkan comserv dengan mendaftar sebagai aktivis dan mengikuti kegiatan PkM (Pengabdian kepada Masyarakat).</li>
+                                            <li>- Mengembangkan portofolio melalui pengalaman nyata dalam proyek-proyek game development.</li>
+                                            <li>- Mengumpulkan pengalaman baru, peluang jaringan, dan bersenang-senang dengan komunitas BGDC.</li>
+                                        </ul>
                                     </Typography>
                                     <br />
                                     <Typography variant="h5" color="white" className="font-medium">
@@ -232,6 +262,13 @@ export default function Faq() {
                                     <Typography variant="paragraph" color="white">
                                         Tidak. Jika ada member yang keluar dari BGDC, maka uang
                                         pendaftaran tidak dapat dikembalikan.
+                                    </Typography>
+                                    <br />
+                                    <Typography variant="h5" color="white" className="font-medium">
+                                        Apa yang menjadi daya tarik BGDC tersendiri dibandingkan UKM lain?
+                                    </Typography>
+                                    <Typography variant="paragraph" color="white">
+                                        Game Development Club memberikan wadah bagi mahasiswa untuk menyalurkan kreativitas mereka melalui pembuatan game. Tidak hanya sekadar bermain game, tetapi kita juga belajar bagaimana merancang, mengembangkan, dan memproduksi game yang inovatif dan menarik.
                                     </Typography>
                                 </Card>
                             </AccordionBody>
@@ -253,39 +290,55 @@ export default function Faq() {
                                 </div>
                             </AccordionHeader>
                             <AccordionBody>
-                                <Card className="bg-purple-90 p-5">
+                                <Card className="bg-faqbg p-5">
                                     <Typography variant="h5" color="white" className="font-medium">
-                                        Berapa besar biaya yang diperlukan untuk bergabung dengan
-                                        kelas BGDC?
+                                        Apakah ada biaya pendaftaran kelas?
                                     </Typography>
                                     <Typography variant="paragraph" color="white">
-                                        Biaya kelas BGDC adalah sebesar Rp50.000,-.
+                                        Ada, Biaya pendaftaran kelas BGDC adalah sebesar Rp50.000,-. Untuk seumur hidup.
                                     </Typography>
                                     <br />
                                     <Typography variant="h5" color="white" className="font-medium">
                                         Apakah biaya kelas sudah termasuk seluruh kelas?
                                     </Typography>
                                     <Typography variant="paragraph" color="white">
-                                        Iya. Jika kalian telah membayar uang kelas, maka kalian akan
-                                        mendapatkan akses untuk seluruh kelas dan rekaman kelas
-                                        melalui server Discord BGDC.
+                                        Iya. Jika kalian telah membayar uang kelas, maka kalian akan mendapatkan akses untuk seluruh kelas dan rekaman kelas melalui server Discord BGDC.
                                     </Typography>
                                     <br />
                                     <Typography variant="h5" color="white" className="font-medium">
-                                        Apakah kelas BGDC akan diadakan secara online atau onsite?
+                                        Kapan pendaftaran kelas dibuka?
                                     </Typography>
                                     <Typography variant="paragraph" color="white">
-                                        Untuk saat ini, kelas BGDC akan diadakan secara online
-                                        melalui server Discord BGDC.
+                                        Tanggal pendaftaran masih belum ditentukan, tetapi kemungkinan akan dibuka pada pertengahan atau akhir september. Pendaftaran kelas akan diumumkan di main server discord BGDC.
                                     </Typography>
                                     <br />
                                     <Typography variant="h5" color="white" className="font-medium">
-                                        Kapan kelas BGDC akan dimulai?
+                                        Apa saja topik yang akan dibahas dalam kelas game development?
                                     </Typography>
                                     <Typography variant="paragraph" color="white">
-                                        Kelas BGDC akan dimulai dari awal semester baru, dan
-                                        penentuan jadwal akan disesuaikan dengan jadwal para member
-                                        BGDC.
+                                        Ada 6 kelas yang ditawarkan oleh BGDC, yaitu:
+                                        <ol>
+                                            <li>1. game design: mengajarkan cara mendesain game termasuk komponennya melalui pembelajaran teori dan studi kasus. Selain teori, kelas Game Design akan mengajarkan murid untuk menggunakan Unity dan berkolaborasi melalui Github.</li>
+                                            <li>2. game programming: mengajarkan cara membuat sebuah game baik 2D maupun 3D menggunakan Unity. Bahasa pemrograman yang akan digunakan di kelas adalah C#.</li>
+                                            <li>3. object-oriented game programming: berfokus mengenai konsep yang ada di OOP dan cara mengimplementasikannya untuk menghasilkan struktur program yang baik.</li>
+                                            <li>4. game sound: membuat game music dan sound effects. Materi akan diajarkan menggunakan Audacity dan Ableton (diperbolehkan untuk menggunakan software lain). Selain kelas teori, mentor Sound Art juga akan mengadakan kelas praktek dimana murid membuat lagu dengan tema yang telah ditentukan terlebih dahulu.</li>
+                                            <li>5. 2D art & animation: mengajarkan cara bagaimana membuat animasi dan gambar dalam sebuah game dan mengimplementasikannya. Kelas 2D mengajarkan apa saja dasar-dasar dari pembuatan gambar dalam bentuk 2D untuk digunakan di dalam game kita.</li>
+                                            <li>6. 3D art & animation: mengajarkan 3D modeling menggunakan Blender. Kelas 3D Art BGDC akan mengajarkan 3D modelling dari awal mengunduh dan memasang Blender; dasar dari 3D modelling, sculpting, dan texturing; sampai rendering dan exporting ke Unity.</li>
+                                        </ol>
+                                    </Typography>
+                                    <br />
+                                    <Typography variant="h5" color="white" className="font-medium">
+                                        Bagaimana sistem penentuan jadwal kelas di BGDC?
+                                    </Typography>
+                                    <Typography variant="paragraph" color="white">
+                                        Penentuan jam kelas akan dilaksanakan melalui sistem voting menggunakan when2meet di server utama (akses voting diperoleh setelah melakukan pembayaran).
+                                    </Typography>
+                                    <br />
+                                    <Typography variant="h5" color="white" className="font-medium">
+                                        Bagaimana jika jadwal yang ditentukkan tidak sesuai dengan saya?
+                                    </Typography>
+                                    <Typography variant="paragraph" color="white">
+                                        Untuk masalah jadwal yang masih tidak sesuai, kita memiliki rekaman untuk setiap kelas. Kamu juga bisa bertanya langsung ke mentormu melalui text channel kelas yang sudah disediakan. 
                                     </Typography>
                                     <br />
                                     <Typography variant="h5" color="white" className="font-medium">
@@ -294,6 +347,14 @@ export default function Faq() {
                                     <Typography variant="paragraph" color="white">
                                         Tidak. Kalian bisa mengikuti kelas yang sesuai dengan minat
                                         kalian.
+                                    </Typography>
+                                    <br />
+                                    <Typography variant="h5" color="white" className="font-medium">
+                                        Apakah kelas BGDC akan diadakan secara online atau onsite?
+                                    </Typography>
+                                    <Typography variant="paragraph" color="white">
+                                        Untuk saat ini, kelas BGDC akan diadakan secara online
+                                        melalui server Discord BGDC.
                                     </Typography>
                                 </Card>
                             </AccordionBody>
